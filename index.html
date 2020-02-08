@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="index.css" \ />
   </head>
   <body>
-    <!-- body의 가장 마지막에 js 파트를 넣어줘야 함. -->
-    <div class="js-clock">
+    <div class="js-clock clock">
       <h1>00:00</h1>
     </div>
 
@@ -17,8 +16,17 @@
       <input type="text" placeholder="What is your name?" />
     </form>
     <h4 class="js-greetings greetings"></h4>
+    <div class="yolo">
+      <h4 class="yolo-title">
+        If you had one day left to live, what would you do?
+      </h4>
+      <h4 class="yolo-subtitle">- Time Remaining -</h4>
+
+      <h4 class="js-yoloTime yolo__time"></h4>
+    </div>
+
     <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
+      <input type="text" placeholder="Write a to do" class="todo" />
     </form>
     <ul class="js-toDoList"></ul>
 
@@ -29,5 +37,6 @@
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+    <script src="remainTime.js"></script>
   </body>
 </html>
