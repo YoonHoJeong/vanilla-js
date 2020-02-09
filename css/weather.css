@@ -1,0 +1,15 @@
+.weather-container {
+  position: absolute;
+  width: 250px;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 25px;
+}
+.weather-container img,
+.weather-container .weather {
+  position: static;
+  display: block;
+}

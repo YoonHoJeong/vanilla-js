@@ -20,22 +20,23 @@
       <h4 class="yolo-title">
         If you had one day left to live, what would you do?
       </h4>
-      <h4 class="yolo-subtitle">- Time Remaining -</h4>
-
-      <h4 class="js-yoloTime yolo__time"></h4>
+      <div class="yolo__time-box">
+        <h4 class="yolo__time-title">- Time Remaining -</h4>
+        <h4 class="js-yoloTime yolo__time"></h4>
+      </div>
     </div>
 
-    <form class="js-toDoForm todo-form">
-      <input
-        type="text"
-        placeholder="Write a to do"
-        onfocus="this.placeholder = ``"
-      />
-    </form>
-    <ol class="js-toDoList todo-list"></ol>
-
-    <span class="js-weather"></span>
-
+    <div class="todo-box">
+      <h4>What's your last wish?</h4>
+      <form class="js-toDoForm todo-form">
+        <input type="text" />
+      </form>
+      <ol class="js-toDoList todo-list"></ol>
+    </div>
+    <div class="weather-container">
+      <img class="js-weatherIcon" />
+      <span class="js-weather weather"></span>
+    </div>
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>

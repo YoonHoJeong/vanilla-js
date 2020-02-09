@@ -1,0 +1,70 @@
+.yolo {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 3px 0 #969696, 1px 5px 5px #aba8a8;
+}
+
+.yolo .yolo-title {
+  margin: 0px;
+}
+.yolo .yolo__time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: rainbow 2s linear;
+  animation-iteration-count: infinite;
+}
+
+.yolo .yolo__time-title {
+  margin: 0px;
+
+  margin-top: 40px;
+}
+
+.yolo .yolo__time {
+  font-size: 35px;
+  margin: 0;
+}
+
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
