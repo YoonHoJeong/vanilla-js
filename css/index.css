@@ -40,15 +40,38 @@ body {
   margin: 0;
 }
 
-.form,
-.greetings {
-  display: none;
-  font-size: 50px;
-  margin: 20px 0;
+h4 {
+  font-size: 23px;
+  margin: 0;
 }
 
+.name-container form,
+.name-container input {
+  margin: 0;
+}
+
+input {
+  font-size: 20px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  outline: 0;
+}
+
+.greetings,
+.name-container {
+  display: none;
+}
+.greetings {
+  font-size: 50px;
+}
 .showing {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -67,10 +90,4 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.3s linear;
-}
-
-.weather {
-  position: absolute;
-  right: 10px;
-  top: 10px;
 }

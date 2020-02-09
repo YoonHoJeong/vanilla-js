@@ -1,29 +1,14 @@
-.todo-box {
+.todo-container,
+.name-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.todo-form {
+.todo-form,
+.form {
   margin-top: 0px;
   width: 300px;
-}
-
-.todo-box h4 {
-  font-size: 23px;
-  margin: 0;
-}
-
-.todo-form input {
-  font-size: 20px;
-  width: 100%;
-  background: none;
-  border: none;
-  border-bottom: 2px solid white;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  outline: 0;
 }
 
 .todo-form input::placeholder {

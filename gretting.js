@@ -1,6 +1,7 @@
 const form = document.querySelector(".js-form"),
   input = form.querySelector("input"),
-  greeting = document.querySelector(".js-greetings");
+  greeting = document.querySelector(".js-greetings"),
+  nameContainer = document.querySelector(".name-container");
 // 쿼리 셀렉터 : 찾은 첫번째 것을 가져옴.
 // 쿼리 셀렉터 all : 모든 것을 list로 가져옴.
 // get element by id
@@ -25,14 +26,14 @@ function handleSubmit(event) {
 
 function askForName() {
   // form을 제출하면 다른 곳으로 전송.
-  form.classList.add(SHOWING_CN);
+  nameContainer.classList.add(SHOWING_CN);
   form.addEventListener("submit", handleSubmit);
 }
 
 function paintGreeting(text) {
-  form.classList.remove(SHOWING_CN);
+  nameContainer.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Welcome ${text}`;
+  greeting.innerText = `Welcome ${text} !!`;
 }
 
 function loadName() {
