@@ -26,9 +26,13 @@
     </div>
 
     <form class="js-toDoForm todo-form">
-      <input type="text" placeholder="Write a to do" />
+      <input
+        type="text"
+        placeholder="Write a to do"
+        onfocus="this.placeholder = ``"
+      />
     </form>
-    <ul class="js-toDoList"></ul>
+    <ol class="js-toDoList todo-list"></ol>
 
     <span class="js-weather"></span>
 
