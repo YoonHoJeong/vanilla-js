@@ -65,10 +65,6 @@ function handleSubmit(event) {
   toDoInput.value = "";
 }
 
-// function(toDo) {
-//     console.log(toDo.text);
-// }
-
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
   if (loadedToDos !== null) {
